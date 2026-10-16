@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagelicious | Authentic New York Style Deli & Bagels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..900;1,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="cafe-bg font-sans selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Top Accent Bar (Classic Deli Gold/Warmth) -->
+    <div class="h-1.5 w-full bg-amber-600 fixed top-0 left-0 z-50"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-1.5 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="font-serif text-2xl font-bold tracking-tight text-stone-900">
+                    Bagelicious<span class="text-amber-600">.</span>
+                </span>
+            </div>
+            <nav class="space-x-8 hidden md:flex text-xs tracking-[0.2em] uppercase text-stone-600 font-semibold">
+                <a href="#about" class="hover:text-amber-600 transition">About</a>
+                <a href="#menu" class="hover:text-amber-600 transition">Our Menu</a>
+                <a href="#gallery" class="hover:text-amber-600 transition">Atmosphere</a>
+                <a href="#visit" class="hover:text-amber-600 transition">Visit Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-44 pb-28 px-6 text-center border-b border-stone-200 bg-gradient-to-b from-stone-100/60 to-transparent">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="inline-block bg-amber-100 text-amber-900 text-xs uppercase tracking-[0.3em] px-4 py-1.5 rounded-full font-bold">
+                Marietta, Georgia • Authentic NY Style
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-tight text-stone-900">
+                Fresh Baked Bagels & <span class="italic font-normal text-amber-700">Morning Classics</span>
+            </h1>
+            <p class="text-stone-600 font-light text-lg max-w-2xl mx-auto leading-relaxed">
+                "Feels just like an authentic New York deli." Serving up fresh-boiled bagels, house-made spreads, warm breakfast sandwiches, and legendary deli sandwiches daily.
+            </p>
+            <div class="pt-6 flex justify-center gap-4 flex-wrap">
+                <a href="#menu" class="bg-stone-900 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-amber-700 transition duration-300 shadow-md">
+                    Explore Menu
+                </a>
+                <a href="#visit" class="border border-stone-300 bg-white text-stone-800 px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-stone-50 transition duration-300 shadow-sm">
+                    Hours & Location
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-28">
+
+        <!-- About / Vibe Section -->
+        <section id="about" class="bg-white border border-stone-200 rounded-2xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-amber-700 font-bold">The Neighborhood Spot</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900">A True New York Deli Experience</h2>
+                <p class="text-stone-600 font-light leading-relaxed text-sm">
+                    Step into Bagelicious for a welcoming, fast-paced neighborhood atmosphere. From over 10 varieties of fresh bagels with flavored cream cheeses to comforting matzo ball soup and heavy-stacked pastrami sandwiches, everything is made with authentic tradition.
+                </p>
+                <div class="pt-2 border-t border-stone-100 space-y-2 text-sm text-stone-700 font-medium">
+                    <p><strong class="text-stone-900">Location:</strong> Johnson Ferry Road, Marietta, GA</p>
+                    <p><strong class="text-stone-900">Vibe:</strong> Quick visit, dine-in, or takeout</p>
+                    <p class="text-amber-700 text-xs font-bold pt-1">Note: Cash or paper check only!</p>
+                </div>
+            </div>
+            <!-- Storefront / Deli Photo Placeholder -->
+            <div class="bg-stone-100 h-72 rounded-xl border border-stone-200 flex items-center justify-center overflow-hidden relative shadow-inner group">
+                <img src="storefront.jpg" alt="Bagelicious Storefront" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <span class="absolute text-xs text-stone-500 font-semibold uppercase tracking-widest bg-white/90 px-4 py-2 rounded-lg border border-stone-200 shadow-sm">
+                    📷 Drop storefront photo here
+                </span>
+            </div>
+        </section>
+
+        <!-- Menu Highlights Section -->
+        <section id="menu" class="space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-xs uppercase tracking-[0.3em] text-amber-700 font-bold">Fresh & Delicious</span>
+                <h2 class="font-serif text-4xl text-stone-900">Popular Menu Favorites</h2>
+                <p class="text-stone-600 text-sm max-w-lg mx-auto">Loved by locals with over 700+ five-star reviews for our authentic taste.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-48 rounded-lg bg-stone-100 border border-stone-200 flex items-center justify-center overflow-hidden relative group">
+                        <img src="bagels.jpg" alt="Fresh Bagels & Spreads" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute text-[10px] text-stone-500 uppercase tracking-widest bg-white/90 px-2.5 py-1 rounded border border-stone-200">bagels.jpg</span>
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">NY-Style Bagels</h3>
+                        <span class="bg-amber-100 text-amber-900 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">BEST SELLER</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Boiled and baked fresh daily. Served warm with your choice of plain, veggie, chive, or specialty cream cheeses.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-48 rounded-lg bg-stone-100 border border-stone-200 flex items-center justify-center overflow-hidden relative group">
+                        <img src="sandwich.jpg" alt="Deli Sandwiches" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute text-[10px] text-stone-500 uppercase tracking-widest bg-white/90 px-2.5 py-1 rounded border border-stone-200">sandwich.jpg</span>
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">Pastrami & Reubens</h3>
+                        <span class="bg-stone-100 text-stone-800 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">AUTHENTIC DELI</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Stacked high with tender pastrami or corned beef, Swiss cheese, sauerkraut, and Russian dressing on rye.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-48 rounded-lg bg-stone-100 border border-stone-200 flex items-center justify-center overflow-hidden relative group">
+                        <img src="breakfast.jpg" alt="Breakfast Platters" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute text-[10px] text-stone-500 uppercase tracking-widest bg-white/90 px-2.5 py-1 rounded border border-stone-200">breakfast.jpg</span>
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">Home Fries & Eggs</h3>
+                        <span class="bg-amber-100 text-amber-900 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">MORNING FAVORITE</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Crispy seasoned home fries, fluffy eggs to order, and classic breakfast meat platters to start your morning right.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="space-y-8">
+            <div class="text-center space-y-3">
+                <span class="text-xs uppercase tracking-[0.3em] text-amber-700 font-bold">Atmosphere</span>
+                <h2 class="font-serif text-4xl text-stone-900">Inside Bagelicious</h2>
+                <p class="text-stone-600 text-sm max-w-md mx-auto">A look at our cozy counter, fresh bakery case, and community vibe.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-48 bg-stone-100 rounded-xl border border-stone-200 overflow-hidden relative flex items-center justify-center group shadow-sm">
+                    <img src="gallery1.jpg" alt="Interior view 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute text-[10px] text-stone-500 bg-white/90 px-2 py-0.5 rounded border border-stone-200">gallery1.jpg</span>
+                </div>
+                <div class="h-48 bg-stone-100 rounded-xl border border-stone-200 overflow-hidden relative flex items-center justify-center group shadow-sm">
+                    <img src="gallery2.jpg" alt="Interior view 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute text-[10px] text-stone-500 bg-white/90 px-2 py-0.5 rounded border border-stone-200">gallery2.jpg</span>
+                </div>
+                <div class="h-48 bg-stone-100 rounded-xl border border-stone-200 overflow-hidden relative flex items-center justify-center group shadow-sm">
+                    <img src="gallery3.jpg" alt="Interior view 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute text-[10px] text-stone-500 bg-white/90 px-2 py-0.5 rounded border border-stone-200">gallery3.jpg</span>
+                </div>
+                <div class="h-48 bg-stone-100 rounded-xl border border-stone-200 overflow-hidden relative flex items-center justify-center group shadow-sm">
+                    <img src="gallery4.jpg" alt="Interior view 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute text-[10px] text-stone-500 bg-white/90 px-2 py-0.5 rounded border border-stone-200">gallery4.jpg</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Us & Hours Section -->
+        <section id="visit" class="bg-white border border-stone-200 rounded-2xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-amber-700 font-bold">Stop By</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900">Hours & Location</h2>
+                <p class="text-stone-600 font-light leading-relaxed text-sm">
+                    Join us in the morning for fresh coffee and hot breakfast bagels. Free parking lot and street parking available right outside.
+                </p>
+                <div class="space-y-2 text-sm text-stone-700 font-medium">
+                    <p><strong class="text-stone-900">Monday – Sunday:</strong> Early Morning through Afternoon</p>
+                    <p><strong class="text-amber-700">Payment Reminder:</strong> Cash or Paper Check Only</p>
+                </div>
+            </div>
+            <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 space-y-4 shadow-sm">
+                <h3 class="font-serif text-xl text-stone-900 font-bold">Quick Details</h3>
+                <div class="space-y-3 text-sm text-stone-600 font-light pt-2">
+                    <p><strong class="text-stone-900 font-medium">Address:</strong> Johnson Ferry Rd, Marietta, GA</p>
+                    <p><strong class="text-stone-900 font-medium">Options:</strong> Dine-In, Takeout, Onsite Services</p>
+                    <p class="text-amber-700 font-semibold pt-2">✓ Wheelchair Accessible Entrance & Parking</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 bg-stone-100 py-12 text-center text-stone-500 text-xs tracking-widest uppercase space-y-2">
+        <div class="h-1 w-16 bg-amber-600 mx-auto rounded-full mb-3"></div>
+        <p>&copy; 2026 Bagelicious. All rights reserved.</p>
+        <p class="text-amber-700 lowercase tracking-normal font-medium">Designed for classic neighborhood favorites.</p>
+    </footer>
+
+</body>
+</html>
